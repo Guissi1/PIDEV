@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="697.0" prefWidth="1419.0" style="-fx-background-color: E2D9D9;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="renders.EntrepriseController">
+    <stylesheets>
+        <URL value="@entreprise.css" />
+    </stylesheets>
+   <children>
+      <TreeTableView fx:id="entrepriseTable" layoutX="593.0" layoutY="73.0" prefHeight="283.0" prefWidth="799.0" showRoot="false">
+        <columns>
+          <TreeTableColumn fx:id="idCol" prefWidth="89.0" text="IDEntreprise" />
+          <TreeTableColumn fx:id="nomCol" prefWidth="178.0" text="NomEntreprise" />
+            <TreeTableColumn fx:id="adrCol" prefWidth="225.0" text="AdresseEntreprise" />
+            <TreeTableColumn fx:id="mailCol" prefWidth="259.0" text="MailEntreprise" />
+        </columns>
+      </TreeTableView>
+      <HBox layoutX="1392.0" layoutY="14.0">
+         <children>
+            <FontAwesomeIcon glyphName="CLOSE" onMouseClicked="#close" size="16" styleClass="mainFxmlClass" text="" />
+         </children>
+      </HBox>
+      <Pane prefHeight="697.0" prefWidth="298.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="202.0" fitWidth="273.0" layoutX="13.0" layoutY="529.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/CRUD/src/image/uno.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fcfcfc" layoutX="27.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entreprise" textAlignment="CENTER" wrappingWidth="244.875">
+               <font>
+                  <Font name="Yu Gothic Regular" size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <HBox layoutX="1303.0" layoutY="628.0" prefHeight="55.0" prefWidth="96.0" spacing="20.0">
+         <children>
+            <FontAwesomeIcon glyphName="USER_PLUS" onMouseClicked="#AddUser" size="25" />
+            <FontAwesomeIcon glyphName="REFRESH" layoutX="10.0" layoutY="21.0" onMouseClicked="#Refresh" size="25" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

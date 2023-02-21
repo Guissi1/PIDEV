@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.BottomNavigationButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root id="AnchorPane" prefHeight="720.0" prefWidth="1028.0" style="-fx-background-color: E2D9D9;" styleClass="mainFxmlClass" type="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="renders.ArtistController">
+    <stylesheets>
+        <URL value="@artist.css" />
+    </stylesheets>
+   <children>
+      <DialogPane prefHeight="723.0" prefWidth="522.0" style="-fx-background-color: black;" />
+      <ImageView blendMode="SRC_ATOP" fitHeight="723.0" fitWidth="522.0" opacity="0.17">
+         <image>
+            <Image url="@../../../../../Desktop/7cae0a82f1bd518fb6ed399c4e60cf73efdbb406.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="44.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter artist" textAlignment="CENTER" wrappingWidth="433.12060546875">
+         <font>
+            <Font name="Yu Gothic UI Light" size="81.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5222222222222223" centerY="1.0" radius="0.5">
+               <stops>
+                  <Stop color="#796868" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Text fill="WHITE" layoutX="67.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" textAlignment="CENTER">
+         <font>
+            <Font name="Yu Gothic UI Light" size="26.0" />
+         </font>
+      </Text>
+      <TextField blendMode="SOFT_LIGHT" cacheHint="QUALITY" layoutX="67.0" layoutY="259.0" prefHeight="39.0" prefWidth="326.0" promptText="insert here" style="-fx-background-insets: none;" styleClass="mainFxmlClass">
+         <font>
+            <Font name="Yu Gothic UI Light" size="18.0" />
+         </font>
+      </TextField>
+      <TextField blendMode="SOFT_LIGHT" cache="true" cacheHint="QUALITY" layoutX="67.0" layoutY="362.0" prefHeight="39.0" prefWidth="326.0" promptText="insert here" style="-fx-background-insets: none;" styleClass="mainFxmlClass">
+         <font>
+            <Font name="Yu Gothic UI Light" size="18.0" />
+         </font>
+      </TextField>
+      <Text fill="WHITE" layoutX="67.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom" textAlignment="CENTER">
+         <font>
+            <Font name="Yu Gothic UI Light" size="26.0" />
+         </font>
+      </Text>
+      <TextArea blendMode="LIGHTEN" layoutX="538.0" layoutY="281.0" prefHeight="322.0" prefWidth="476.0" promptText="enter text">
+         <font>
+            <Font name="Yu Gothic UI Light" size="59.0" />
+         </font>
+      </TextArea>
+      <Text fill="#686464" layoutX="538.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biographie" textAlignment="CENTER">
+         <font>
+            <Font name="Yu Gothic UI Light" size="56.0" />
+         </font>
+      </Text>
+      <DatePicker blendMode="LIGHTEN" layoutX="56.0" layoutY="492.0" prefHeight="58.0" prefWidth="213.0" />
+      <Text fill="WHITE" layoutX="56.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date de naissance" textAlignment="CENTER">
+         <font>
+            <Font name="Yu Gothic UI Light" size="26.0" />
+         </font>
+      </Text>
+      <BottomNavigationButton blendMode="LIGHTEN" layoutX="110.0" layoutY="637.0" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: black;" text="confirm" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Light" size="23.0" />
+         </font>
+      </BottomNavigationButton>
+      <BottomNavigationButton blendMode="LIGHTEN" layoutX="250.0" layoutY="637.0" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: black;" text="retour" textFill="WHITE">
+         <font>
+            <Font name="Yu Gothic UI Light" size="23.0" />
+         </font>
+      </BottomNavigationButton>
+      <TextField blendMode="SOFT_LIGHT" cacheHint="QUALITY" layoutX="538.0" layoutY="204.0" prefHeight="39.0" prefWidth="326.0" promptText="insert here" style="-fx-background-insets: none;" styleClass="mainFxmlClass">
+         <font>
+            <Font name="Yu Gothic UI Light" size="18.0" />
+         </font>
+      </TextField>
+      <Text fill="#5e5b5b" layoutX="538.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" textAlignment="CENTER">
+         <font>
+            <Font name="Yu Gothic UI Light" size="26.0" />
+         </font>
+      </Text>
+   </children>
+</fx:root>
